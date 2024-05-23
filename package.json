@@ -26,5 +26,8 @@
     "format": "make format",
     "lint": "make lint",
     "all": "make all"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^1.1.0"
   }
 }

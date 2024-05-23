@@ -1,12 +1,12 @@
-[profile.default]
+[default]
 src = 'src'
 out = 'out'
 libs = ['lib']
-gas_reports = ["*"]
-optimizer = true
-optimizer_runs = 20000
-fs_permissions = [{ access = "read", path = "lib/foundry-chainlink-toolkit/out"}]
 
-# Remappings in remappings.txt
+[profile.default]
+optimize = true
+optimizer_runs = 200
 
-# See more config options https://github.com/gakonst/foundry/tree/master/config
+[dependencies]
+forge-std = { git = "https://github.com/foundry-rs/forge-std", tag = "v1.1.0" }
+chainlink = { git = "https://github.com/smartcontractkit/chainlink", tag = "0.10.12" }
